@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/schemathesis/tracecov/discussions
+    about: How-to questions, ideas and anything that is not a bug.
+  - name: Documentation
+    url: https://docs.tracecov.sh
+    about: Installation, integrations and report reference.
+  - name: Security problem
+    url: https://github.com/schemathesis/tracecov/security/advisories/new
+    about: Report vulnerabilities privately, not as an issue.
+  - name: Professional edition
+    url: https://docs.tracecov.sh/editions/
+    about: Write to info@tracecov.sh for access.

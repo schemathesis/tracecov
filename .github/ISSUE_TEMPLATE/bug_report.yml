@@ -1,0 +1,56 @@
+name: Bug report
+description: A crash, a wrong coverage number, or a spec TraceCov rejects
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Include the full error message or a screenshot of the report.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: The smallest spec fragment and the requests (or test code) that show the problem. Remove anything private.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition
+      options:
+        - Community
+        - Professional
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: TraceCov version
+      description: "`tracecov --version`, `python -c 'import tracecov; print(tracecov.__version__)'` or `npm ls @tracecov/core`"
+    validations:
+      required: true
+  - type: dropdown
+    id: integration
+    attributes:
+      label: How you run TraceCov
+      multiple: true
+      options:
+        - Schemathesis
+        - pytest
+        - Python library (requests, httpx, Django, Flask)
+        - JavaScript library
+        - CLI report
+        - CLI proxy
+        - Other
+    validations:
+      required: true
