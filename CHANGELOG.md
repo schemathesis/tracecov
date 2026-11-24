@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.26.2 - 2026-11-24
+
+### :wrench: Changed
+
+- "Share feedback" link in the HTML report to GitHub Discussions.
+
 ## 0.26.1 - 2026-11-22
 
 ### :bug: Fixed
